@@ -18788,7 +18788,7 @@ const Se = {
 • نرجو من ضيوفنا الكرام تفهّم أن قاعة الحفلات لا تستقبل الأطفال`,
     introImage: "golden seal.png",
     introVideo: "intro-video2.mp4",
-    bgVideo: "/k/bg.mp4",
+    bgVideo: "bg.mp4",
     music: "/assets/background-music-violent.mp3"
 };
 function B2({onOpenComplete: f, onStartMusic: i, onPlayBgVideo: u}) {
