@@ -18783,9 +18783,13 @@ const Se = {
     address: "Dely Brahim",
     mapsLink: "https://maps.app.goo.gl/U5vqR4D28A5vJevb8",
     mapCoords: "36.742257,2.9842149",
-    conditions: `• Les photos sont interdites afin de préserver l’intimité de la cérémonie
-• La salle n’accepte pas les enfants – soirée réservée aux adultes uniquement
+      conditions: `• Les photos sont interdites afin de préserver l’intimité de la cérémonie
+• La salle n’accepte pas les enfants – yahia aux adultes uniquement
 • نرجو من ضيوفنا الكرام تفهّم أن قاعة الحفلات لا تستقبل الأطفال`,
+               
+                
+
+
     introImage: "golden seal.png",
     introVideo: "intro-video2.mp4",
     bgVideo: "bg.mp4",
@@ -18975,7 +18979,7 @@ function L2({envelopeOpened: f, t: i, onRegisterBgPlay: u}) {
     }
     ;
     return Z.jsxs("section", {
-        "code-path": "src/sections/HeroSection.tsx:69:5",
+        "code-path": "src/sections/Section.tsx:69:5",
         ref: a,
         className: "relative min-h-screen flex items-start justify-center overflow-hidden",
         children: [Z.jsxs("div", {
@@ -19024,7 +19028,7 @@ function L2({envelopeOpened: f, t: i, onRegisterBgPlay: u}) {
                 style: {
                     color: "#F5F0E8"
                 },
-                children: [Se.bride, " & ", Se.groom]
+                children: [i.bride, " & ", i.groom]
             }), Z.jsxs("div", {
                 "code-path": "src/sections/HeroSection.tsx:107:9",
                 className: "flex items-center justify-center gap-3 mb-2",
@@ -19107,7 +19111,7 @@ function j2({t: f}) {
     , {
         scope: i
     }),
-    Z.jsx("section", {
+       Z.jsx("section", {
         "code-path": "src/sections/LoveStorySection.tsx:37:5",
         ref: i,
         className: "bg-cream py-20 md:py-28 px-6",
@@ -19156,7 +19160,7 @@ function j2({t: f}) {
                 },
                 children: [Z.jsx("img", {
                     "code-path": "src/sections/LoveStorySection.tsx:61:11",
-                    src: "dentelle.svg",
+                    src: "/assets/dentelle.svg",
                     alt: "",
                     className: "absolute top-0 left-0 w-full pointer-events-none z-10",
                     style: {
@@ -19164,7 +19168,7 @@ function j2({t: f}) {
                     }
                 }), Z.jsx("img", {
                     "code-path": "src/sections/LoveStorySection.tsx:66:11",
-                    src: "dentelle.svg",
+                    src: "/assets/dentelle.svg",
                     alt: "",
                     className: "absolute bottom-0 left-0 w-full pointer-events-none z-10",
                     style: {
@@ -19178,7 +19182,7 @@ function j2({t: f}) {
                 }), Z.jsx("p", {
                     "code-path": "src/sections/LoveStorySection.tsx:74:11",
                     className: "animate-item font-script text-3xl md:text-4xl text-[#8B7045] mt-6 mb-1",
-                    children: Se.brideFull
+                    children: f.brideFull
                 }), Z.jsx("p", {
                     "code-path": "src/sections/LoveStorySection.tsx:78:11",
                     className: "animate-item font-body text-xs uppercase tracking-[0.25em] text-charcoal/50 my-3",
@@ -19186,7 +19190,7 @@ function j2({t: f}) {
                 }), Z.jsx("p", {
                     "code-path": "src/sections/LoveStorySection.tsx:82:11",
                     className: "animate-item font-script text-3xl md:text-4xl text-[#8B7045] mb-6",
-                    children: Se.groomFull
+                    children: f.groomFull
                 }), Z.jsx("div", {
                     "code-path": "src/sections/LoveStorySection.tsx:86:11",
                     className: "animate-item w-8 h-px bg-gold/50 mx-auto mb-6"
@@ -19502,8 +19506,7 @@ function G2({t: f, lang: i}) {
     })
 }
 function V2({t: f}) {
-    const i = Se.conditions.split(/\n|;/).map(u => u.trim()).filter(Boolean);
-    return i.length === 0 ? null : Z.jsx("section", {
+    return Z.jsx("section", {
         "code-path": "src/sections/ConditionsSection.tsx:20:5",
         className: "bg-cream py-20 md:py-28 px-6",
         children: Z.jsx("div", {
@@ -19514,59 +19517,67 @@ function V2({t: f}) {
                 children: Z.jsxs("div", {
                     "code-path": "src/sections/ConditionsSection.tsx:23:11",
                     className: "lace-card relative px-8 md:px-12 py-20",
-                    children: [Z.jsx("img", {
-                        "code-path": "src/sections/ConditionsSection.tsx:25:13",
-                        src: "dentelle.svg",
-                        alt: "",
-                        className: "absolute top-0 left-0 w-full pointer-events-none z-10",
-                        style: {
-                            filter: "sepia(0.4) saturate(1.5) brightness(0.95)"
-                        }
-                    }), Z.jsx("img", {
-                        "code-path": "src/sections/ConditionsSection.tsx:28:13",
-                        src: "dentelle.svg",
-                        alt: "",
-                        className: "absolute bottom-0 left-0 w-full pointer-events-none z-10",
-                        style: {
-                            transform: "scaleY(-1)",
-                            filter: "sepia(0.4) saturate(1.5) brightness(0.95)"
-                        }
-                    }), Z.jsxs("div", {
-                        "code-path": "src/sections/ConditionsSection.tsx:32:13",
-                        className: "relative z-20",
-                        children: [Z.jsxs("div", {
-                            "code-path": "src/sections/ConditionsSection.tsx:33:15",
-                            className: "text-center mb-8",
-                            children: [Z.jsx("h2", {
-                                "code-path": "src/sections/ConditionsSection.tsx:35:17",
-                                className: "font-serif-display text-3xl md:text-4xl text-charcoal",
-                                children: f.conditionsTitle
-                            }), Z.jsx("div", {
-                                "code-path": "src/sections/ConditionsSection.tsx:38:17",
-                                className: "w-16 h-px bg-gold/40 mx-auto mt-4"
-                            })]
-                        }), Z.jsx("div", {
-                            "code-path": "src/sections/ConditionsSection.tsx:41:15",
-                            className: "space-y-5",
-                            children: i.map( (u, a) => Z.jsxs("div", {
-                                "code-path": "src/sections/ConditionsSection.tsx:43:19",
-                                className: "flex items-start gap-4",
-                                children: [Z.jsx("span", {
-                                    "code-path": "src/sections/ConditionsSection.tsx:44:21",
-                                    className: "text-gold text-xs mt-1 shrink-0",
-                                    children: "◆"
-                                }), Z.jsx("p", {
-                                    "code-path": "src/sections/ConditionsSection.tsx:45:21",
-                                    className: "font-body text-sm md:text-base text-charcoal/80 leading-relaxed italic",
-                                    children: u
-                                })]
-                            }, a))
-                        })]
-                    })]
+                    children: [
+                        Z.jsx("img", {
+                            "code-path": "src/sections/ConditionsSection.tsx:25:13",
+                            src: "dentelle.svg",
+                            alt: "",
+                            className: "absolute top-0 left-0 w-full pointer-events-none z-10",
+                            style: {
+                                filter: "sepia(0.4) saturate(1.5) brightness(0.95)"
+                            }
+                        }),
+                        Z.jsx("img", {
+                            "code-path": "src/sections/ConditionsSection.tsx:28:13",
+                            src: "dentelle.svg",
+                            alt: "",
+                            className: "absolute bottom-0 left-0 w-full pointer-events-none z-10",
+                            style: {
+                                transform: "scaleY(-1)",
+                                filter: "sepia(0.4) saturate(1.5) brightness(0.95)"
+                            }
+                        }),
+                        Z.jsxs("div", {
+                            "code-path": "src/sections/ConditionsSection.tsx:32:13",
+                            className: "relative z-20",
+                            children: [
+                                Z.jsxs("div", {
+                                    "code-path": "src/sections/ConditionsSection.tsx:33:15",
+                                    className: "text-center mb-8",
+                                    children: [
+                                        Z.jsx("h2", {
+                                            "code-path": "src/sections/ConditionsSection.tsx:35:17",
+                                            className: "font-serif-display text-3xl md:text-4xl text-charcoal",
+                                            children: f.conditionsTitle
+                                        }),
+                                        Z.jsx("div", {
+                                            "code-path": "src/sections/ConditionsSection.tsx:38:17",
+                                            className: "w-16 h-px bg-gold/40 mx-auto mt-4"
+                                        })
+                                    ]
+                                }),
+                                Z.jsxs("div", {
+                                    "code-path": "src/sections/ConditionsSection.tsx:41:15",
+                                    className: "text-center space-y-4",
+                                    children: [
+                                        Z.jsx("p", {
+                                            className: "ayah font-arabic text-3xl leading-loose",
+                                             dir: "rtl",
+                                            children: "﴿ يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ إِنَّ اللَّهَ عَلِيمٌ خَبِيرٌ ﴾"
+                                        }),
+                                        Z.jsx("p", {
+                                            className: "surah text-lg mt-4 text-gold",
+                                            children: "سورة الحجرات - الآية 13"
+                                        })
+                                    ]
+                                })
+                            ]
+                        })
+                    ]
                 })
             })
         })
-    })
+    });
 }
 function Q2({t: f}) {
     return Z.jsxs("footer", {
@@ -19575,7 +19586,7 @@ function Q2({t: f}) {
         children: [Z.jsxs("p", {
             "code-path": "src/sections/FooterSection.tsx:11:7",
             className: "font-script text-2xl text-[#8B7045] mb-1",
-            children: [Se.bride, " & ", Se.groom]
+            children: [f.bride, " & ", f.groom]
         }), Z.jsxs("p", {
             "code-path": "src/sections/FooterSection.tsx:14:7",
             className: "font-body text-[10px] uppercase tracking-[0.2em] text-charcoal/40",
@@ -19592,14 +19603,18 @@ function Q2({t: f}) {
     })
 }
 const Z2 = {
-    en: {
+    en: { 
+        brideFull: "Nadine",
+        groomFull: "Abdulrahman",
+        bride: "Nadine",
+        groom: "Abdulrahman",
         youAreInvited: "You are invited",
         gettingMarried: "WE'RE GETTING MARRIED",
         confirmAttendance: "CONFIRM ATTENDANCE",
         ourJourney: "Wedding Invitation",
         ourLoveStory: "Wedding Invitation",
         fairepartIntroPre: "With great joy and gratitude to Allah, the",
-        fairepartIntroPostDaughter: "family is delighted to announce the marriage of their daughter",
+        fairepartIntroPostDaughter: " family benali is delighted to announce the marriage of their daughter",
         fairepartIntroPostSon: "family is delighted to announce the marriage of their son",
         fairepartBride: "Ines Megharbi",
         fairepartConnector: "to",
@@ -19645,7 +19660,7 @@ const Z2 = {
         joinUs: "",
         eventDetails: "Venue & Reception Time",
         eventDetailsDesc: "",
-        conditionsTitle: "Important Information",
+        conditionsTitle: "قال تعالى",
         weddingCeremony: "Celebration Venue",
         venueAddress: "La Salle Stand'all — Bordj El Kiffan, Alger",
         ceremonyDesc: "Join us as we celebrate this beautiful union surrounded by the people we love most.",
@@ -19692,19 +19707,23 @@ const Z2 = {
         hashtag: "#InesAndKarim2026"
     },
     
-    ar: {
+    ar: { 
+    brideFull: "ندين",
+    groomFull: "عبد الرحمن",
+    bride: "ندين",
+    groom: "عبد الرحمن",   
     youAreInvited: "أنتم مدعوون",
     gettingMarried: "نحتفل بزفافنا",
     confirmAttendance: "تأكيد الحضور",
     ourJourney: "دعوة زفاف",
     ourLoveStory: "دعوة زفاف",
-    fairepartIntroPre: "بكل فرح وامتنان لله، تتشرف عائلة",
-    fairepartIntroPostDaughter: "بدعوتكم لمشاركة فرحتها بزفاف ابنتها",
+    fairepartIntroPre: "بكل فرح وامتنان لله، تتشرف عائلة  بن علي ",
+    fairepartIntroPostDaughter: "بدعوتكم لمشاركة فرحتها بزفاف ابنتها ",
     fairepartIntroPostSon: "بدعوتكم لمشاركة فرحتها بزفاف ابنها",
     fairepartBride: "إيناس مغربي",
     fairepartConnector: "على",
     fairepartGroom: "كريم بابوري",
-    fairepartPara2: "ويسعدها ويشرفها حضوركم لمشاركتها هذه المناسبة المباركة التي تجمع بين المحبة والمودة والبركة.",
+    fairepartPara2: "ويسعدها ويشرفها حضوركم لمشاركتها هذه المناسبة المباركة التي تجمع بينهما في المحبة والمودة والبركة.",
     fairepartPara3: "إن حضوركم سيزيد فرحتنا بهجة، وسيجعل هذا اليوم ذكرى خالدة نعتز بها دائمًا.",
     fairepartPara1: "",
     fairepartPara4: "",
@@ -19759,7 +19778,7 @@ const Z2 = {
     eventDetails: "مكان الحفل وموعد الاستقبال",
     eventDetailsDesc: "",
 
-    conditionsTitle: "معلومات مهمة",
+    conditionsTitle: "قال تعالى",
 
     weddingCeremony: "مكان الاحتفال",
     venueAddress: "قاعة Stand'all — برج الكيفان، الجزائر",
@@ -19833,13 +19852,17 @@ const Z2 = {
     
     
     
-    fr: {
+    fr: { 
+        brideFull: "Nadine",
+        groomFull: "Abdulrahman",
+        bride: "Nadine",
+        groom: "Abdulrahman",
         youAreInvited: "Vous êtes invité",
         gettingMarried: "Cérémonie de Marriage",
         confirmAttendance: "CONFIRMER LA PRÉSENCE",
         ourJourney: "Faire-part de Mariage",
         ourLoveStory: "Faire-part de Mariage",
-        fairepartIntroPre: "Dans la joie et la gratitude envers Allah, la famille",
+        fairepartIntroPre: "Dans la joie et la gratitude envers Allah, la famille Bénali ",
         fairepartIntroPostDaughter: "a l'immense bonheur de vous annoncer l'union de leur fille",
         fairepartIntroPostSon: "a l'immense bonheur de vous annoncer l'union de leur fils",
         fairepartBride: "Inès Megharbi",
@@ -19886,7 +19909,7 @@ const Z2 = {
         joinUs: "",
         eventDetails: "Lieu de Célébration & Heure de Réception",
         eventDetailsDesc: "",
-        conditionsTitle: "Informations Importantes",
+        conditionsTitle: "قال تعالى",
         weddingCeremony: "Lieu de Célébration",
         venueAddress: "La Salle Stand'all — Bordj El Kiffan, Alger",
         ceremonyDesc: "Rejoignez-nous pour célébrer cette belle union entourés des personnes qui nous sont chères.",
@@ -20013,7 +20036,14 @@ function k2() {
                 onRegisterBgPlay: y => {
                     d.current = y
                 }
-            }), Z.jsx(j2, {
+            }),Z.jsx(V2, {
+                "code-path": "src/App.tsx:85:9",
+                t: b
+            }), 
+            
+            
+            
+               Z.jsx(j2, {
                 "code-path": "src/App.tsx:82:9",
                 t: b
             }), Z.jsx(X2, {
@@ -20023,9 +20053,6 @@ function k2() {
                 "code-path": "src/App.tsx:84:9",
                 t: b,
                 lang: u
-            }), Z.jsx(V2, {
-                "code-path": "src/App.tsx:85:9",
-                t: b
             }), Z.jsx("img", {
                 "code-path": "src/App.tsx:86:9",
                 src: "pearl-garland.png",
