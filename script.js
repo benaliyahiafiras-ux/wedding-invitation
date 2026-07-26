@@ -18777,10 +18777,10 @@ const Se = {
     concernedSide: "bride",
     weddingDate: "2026-08-18T18:30:00",
     dateDisplay: "18 août 2026",
-    timeDisplay: "16h30",
-    timeDisplayEN: "4:30 PM",
-    venue: "Salle des fêtes maachi",
-    address: "Dely Brahim",
+    timeDisplay: "16h00",
+    timeDisplayEN: "4:00 PM",
+    venue: "Salle des fêtes Maachi",
+    address: "Batna",
     mapsLink: "https://maps.app.goo.gl/U5vqR4D28A5vJevb8",
     mapCoords: "36.742257,2.9842149",
       conditions: `• Les photos sont interdites afin de préserver l’intimité de la cérémonie
@@ -18792,7 +18792,7 @@ const Se = {
 
     introImage: "golden seal.png",
     introVideo: "intro-video2.mp4",
-    bgVideo: "bg.mp4",
+    bgVideo: "bg2.mp4",
     music: "/assets/background-music-violent.mp3"
 };
 function B2({onOpenComplete: f, onStartMusic: i, onPlayBgVideo: u}) {
@@ -19561,7 +19561,7 @@ function V2({t: f}) {
                                     className: "text-center space-y-4",
                                     children: [
                                         Z.jsx("p", {
-                                            className: "ayah font-arabic text-3xl leading-loose",
+                                            className: "ayah font-arabic text-3xl leading-loose   text-gold",
                                              dir: "rtl",
                                             children: "﴿ يَا أَيُّهَا النَّاسُ إِنَّا خَلَقْنَاكُم مِّن ذَكَرٍ وَأُنثَىٰ وَجَعَلْنَاكُمْ شُعُوبًا وَقَبَائِلَ لِتَعَارَفُوا إِنَّ أَكْرَمَكُمْ عِندَ اللَّهِ أَتْقَاكُمْ إِنَّ اللَّهَ عَلِيمٌ خَبِيرٌ ﴾"
                                         }),
@@ -19614,7 +19614,7 @@ const Z2 = {
         ourJourney: "Wedding Invitation",
         ourLoveStory: "Wedding Invitation",
         fairepartIntroPre: "With great joy and gratitude to Allah, the",
-        fairepartIntroPostDaughter: " family benali is delighted to announce the marriage of their daughter",
+        fairepartIntroPostDaughter: " family Benali is delighted to announce the marriage of their daughter",
         fairepartIntroPostSon: "family is delighted to announce the marriage of their son",
         fairepartBride: "Ines Megharbi",
         fairepartConnector: "to",
@@ -19660,7 +19660,7 @@ const Z2 = {
         joinUs: "",
         eventDetails: "Venue & Reception Time",
         eventDetailsDesc: "",
-        conditionsTitle: "قال تعالى",
+        conditionsTitle: "قال تعالى ",
         weddingCeremony: "Celebration Venue",
         venueAddress: "La Salle Stand'all — Bordj El Kiffan, Alger",
         ceremonyDesc: "Join us as we celebrate this beautiful union surrounded by the people we love most.",
@@ -19863,7 +19863,7 @@ const Z2 = {
         ourJourney: "Faire-part de Mariage",
         ourLoveStory: "Faire-part de Mariage",
         fairepartIntroPre: "Dans la joie et la gratitude envers Allah, la famille Bénali ",
-        fairepartIntroPostDaughter: "a l'immense bonheur de vous annoncer l'union de leur fille",
+        fairepartIntroPostDaughter: "a l'immense honneur de vous annoncer l'union de leur fille",
         fairepartIntroPostSon: "a l'immense bonheur de vous annoncer l'union de leur fils",
         fairepartBride: "Inès Megharbi",
         fairepartConnector: "avec",
