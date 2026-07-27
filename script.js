@@ -18754,7 +18754,7 @@ function H2({lang: f, onLangChange: i, musicOn: u, onMusicToggle: a}) {
         }), Z.jsx("button", {
             "code-path": "src/components/FixedUI.tsx:23:7",
             onClick: a,
-            className: "fixed bottom-4 right-4 z-40 w-12 h-12 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full shadow-soft border border-sage/20 text-charcoal hover:bg-white transition-all hover:scale-105",
+            className: "fixed bottom-4 right-4 z-40 w-12 h-12 flex items-center justify-center bg-white/80 backdrop-blur-sm rounded-full shadow-soft border border-sage/20 text-charcoal hover:bg-white transition-all hover:scale-105  hidden",
             children: u ? Z.jsx(R2, {
                 "code-path": "src/components/FixedUI.tsx:28:11",
                 size: 20,
@@ -18792,7 +18792,7 @@ const Se = {
 
     introImage: "golden seal.png",
     introVideo: "intro-video2.mp4",
-    bgVideo: "bg2.mp4",
+    bgVideo: "bg3.mp4",
     music: "/assets/background-music-violent.mp3"
 };
 function B2({onOpenComplete: f, onStartMusic: i, onPlayBgVideo: u}) {
@@ -19024,7 +19024,7 @@ function L2({envelopeOpened: f, t: i, onRegisterBgPlay: u}) {
                 children: i.gettingMarried
             }), Z.jsxs("h1", {
                 "code-path": "src/sections/HeroSection.tsx:103:9",
-                className: "font-script text-5xl md:text-7xl drop-shadow-lg mb-2 leading-tight",
+                className: `${i.nameFont} text-5xl md:text-7xl drop-shadow-lg mb-2 leading-tight`,
                 style: {
                     color: "#F5F0E8"
                 },
@@ -19181,7 +19181,7 @@ function j2({t: f}) {
                     children: [f.fairepartIntroPre, " ", Se.concernedFamily, " ", f.fairepartIntroPostDaughter]
                 }), Z.jsx("p", {
                     "code-path": "src/sections/LoveStorySection.tsx:74:11",
-                    className: "animate-item font-script text-3xl md:text-4xl text-[#8B7045] mt-6 mb-1",
+                    className: `animate-item ${f.nameFont} text-3xl md:text-4xl text-[#8B7045] mt-6 mb-1`,
                     children: f.brideFull
                 }), Z.jsx("p", {
                     "code-path": "src/sections/LoveStorySection.tsx:78:11",
@@ -19189,7 +19189,7 @@ function j2({t: f}) {
                     children: f.fairepartConnector
                 }), Z.jsx("p", {
                     "code-path": "src/sections/LoveStorySection.tsx:82:11",
-                    className: "animate-item font-script text-3xl md:text-4xl text-[#8B7045] mb-6",
+                    className: `animate-item ${f.nameFont} text-3xl md:text-4xl text-[#8B7045] mb-6`,
                     children: f.groomFull
                 }), Z.jsx("div", {
                     "code-path": "src/sections/LoveStorySection.tsx:86:11",
@@ -19341,7 +19341,7 @@ function X2({t: f}) {
                         }), Z.jsxs("p", {
                             "code-path": "src/sections/CountdownSection.tsx:132:15",
                             className: "animate-item font-body text-[11px] uppercase tracking-[0.28em] text-charcoal/55 mb-8",
-                            children: [f.countdownUntil, " ", Se.dateDisplay, " — ", Se.timeDisplay]
+                            children: [f.countdownUntil, " ", f.dateDisplay, " — ", Se.timeDisplay]
                         }), Z.jsx("div", {
                             "code-path": "src/sections/CountdownSection.tsx:137:15",
                             className: "animate-item flex justify-center items-center",
@@ -19464,7 +19464,7 @@ function G2({t: f, lang: i}) {
                                 }), Z.jsx("span", {
                                     "code-path": "src/sections/EventDetailsSection.tsx:37:19",
                                     className: "font-body text-sm",
-                                    children: Se.venue
+                                    children: f.venue
                                 })]
                             }), Z.jsx("p", {
                                 "code-path": "src/sections/EventDetailsSection.tsx:39:17",
@@ -19547,7 +19547,7 @@ function V2({t: f}) {
                                     children: [
                                         Z.jsx("h2", {
                                             "code-path": "src/sections/ConditionsSection.tsx:35:17",
-                                            className: "font-serif-display text-3xl md:text-4xl text-charcoal",
+                                            className: "font-serif-display text-3xl md:text-4xl text-charcoal  text-gold",
                                             children: f.conditionsTitle
                                         }),
                                         Z.jsx("div", {
@@ -19604,12 +19604,15 @@ function Q2({t: f}) {
 }
 const Z2 = {
     en: { 
+        venue: "Salle des fêtes Maachi",
+        nameFont: "font-script",
+        dateDisplay:"18 August 2026",
         brideFull: "Nadine",
         groomFull: "Abdulrahman",
         bride: "Nadine",
         groom: "Abdulrahman",
         youAreInvited: "You are invited",
-        gettingMarried: "WE'RE GETTING MARRIED",
+        gettingMarried: "wedding ceremony",
         confirmAttendance: "CONFIRM ATTENDANCE",
         ourJourney: "Wedding Invitation",
         ourLoveStory: "Wedding Invitation",
@@ -19708,12 +19711,15 @@ const Z2 = {
     },
     
     ar: { 
+    venue: "قاعة الحفلات معاشي",
+     nameFont: "font-arabic",
+    dateDisplay:"18 أوت 2026",
     brideFull: "ندين",
     groomFull: "عبد الرحمن",
     bride: "ندين",
     groom: "عبد الرحمن",   
     youAreInvited: "أنتم مدعوون",
-    gettingMarried: "نحتفل بزفافنا",
+    gettingMarried: "دعوة زفاف",
     confirmAttendance: "تأكيد الحضور",
     ourJourney: "دعوة زفاف",
     ourLoveStory: "دعوة زفاف",
@@ -19853,6 +19859,9 @@ const Z2 = {
     
     
     fr: { 
+        venue: "Salle des fêtes Maachi",
+        nameFont: "font-script",
+        dateDisplay:"18 août 2026",
         brideFull: "Nadine",
         groomFull: "Abdulrahman",
         bride: "Nadine",
