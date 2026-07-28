@@ -19598,7 +19598,7 @@ function Q2({t: f}) {
         }), Z.jsx("p", {
             "code-path": "src/sections/FooterSection.tsx:17:7",
             className: "font-body text-[9px] tracking-[0.15em] text-charcoal/25 mt-2",
-            children: "finiprint"
+            children: ""
         })]
     })
 }
