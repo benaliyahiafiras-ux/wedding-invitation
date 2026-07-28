@@ -19871,7 +19871,7 @@ const Z2 = {
         confirmAttendance: "CONFIRMER LA PRÉSENCE",
         ourJourney: "Faire-part de Mariage",
         ourLoveStory: "Faire-part de Mariage",
-        fairepartIntroPre: "Dans la joie et la gratitude envers Allah, la famille Bénali ",
+        fairepartIntroPre: "Dans la joie et la gratitude envers Allah, la famille Benali ",
         fairepartIntroPostDaughter: "a l'immense honneur de vous annoncer l'union de leur fille",
         fairepartIntroPostSon: "a l'immense bonheur de vous annoncer l'union de leur fils",
         fairepartBride: "Inès Megharbi",
