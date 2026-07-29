@@ -19073,7 +19073,7 @@ function L2({envelopeOpened: f, t: i, onRegisterBgPlay: u}) {
                 style: {
                     color: "#F5F0E8"
                 },
-                children: Se.dateDisplay.toUpperCase()
+                children: i.dateDisplay.toUpperCase()
             })]
         }), Z.jsx("button", {
             "code-path": "src/sections/HeroSection.tsx:122:7",
@@ -19607,7 +19607,7 @@ const Z2 = {
         venue: "Salle des fêtes Maachi",
         nameFont: "font-script",
         dateDisplay:"18 August 2026",
-        brideFull: "Nadine",
+        brideFull: "Test",
         groomFull: "Abdulrahman",
         bride: "Nadine",
         groom: "Abdulrahman",
@@ -19862,11 +19862,11 @@ const Z2 = {
         venue: "Salle des fêtes Maachi",
         nameFont: "font-script",
         dateDisplay:"18 août 2026",
-        brideFull: "Nadine",
+        brideFull: "Test",
         groomFull: "Abdulrahman",
         bride: "Nadine",
         groom: "Abdulrahman",
-        youAreInvited: "Vous êtes invité",
+        youAreInvited: "Vous êtes invités",
         gettingMarried: "Cérémonie de Marriage",
         confirmAttendance: "CONFIRMER LA PRÉSENCE",
         ourJourney: "Faire-part de Mariage",
