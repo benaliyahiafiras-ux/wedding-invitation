@@ -18777,8 +18777,8 @@ const Se = {
     concernedSide: "bride",
     weddingDate: "2026-08-18T18:30:00",
     dateDisplay: "18 août 2026",
-    timeDisplay: "16h00",
-    timeDisplayEN: "4:00 PM",
+    timeDisplay: "14H00",
+    timeDisplayEN: "  Starting from 2:00 PM",
     venue: "Salle des fêtes Maachi",
     address: "Batna",
     mapsLink: "https://maps.app.goo.gl/U5vqR4D28A5vJevb8",
@@ -18876,16 +18876,41 @@ function B2({onOpenComplete: f, onStartMusic: i, onPlayBgVideo: u}) {
                 opacity: 0
             },
             onEnded: m
-        }), Z.jsx("div", {
+        }), Z.jsxs("div", {
             "code-path": "src/components/EnvelopeOverlay.tsx:78:7",
             ref: r,
-            className: "absolute inset-0",
-            children: Z.jsx("img", {
+            className: "absolute inset-0 ",
+            children:[ Z.jsx("img", {
                 "code-path": "src/components/EnvelopeOverlay.tsx:79:9",
                 src: Se.introImage,
                 alt: "",
                 className: "w-full h-full object-cover"
+        }),
+             Z.jsx("button", {
+            style: {
+        position: "fixed",
+        bottom: "460px",
+        left: "50%",
+        transform: "translateX(-50%)",
+        zIndex: 9999,
+        background: "transparent",
+        color: "#6D1F32",
+        padding: "14px 32px",
+        border: "2px solid #6D1F32",
+        borderRadius: "9999px",
+        fontSize: "18px",
+        fontWeight: "600",
+        cursor: "pointer",
+        boxShadow: "0 0 12px rgba(212,175,55,0.35)",
+         backdropFilter: "blur(2px)"
+    },                   
+        onClick: e => {
+            e.stopPropagation(); // يمنع تنفيذ onClick مرتين
+            g();
+        },
+        children: " اضغط لفتح الدعوة"
             })
+            ]
         })]
     })
 }
@@ -19028,7 +19053,7 @@ function L2({envelopeOpened: f, t: i, onRegisterBgPlay: u}) {
                 style: {
                     color: "#F5F0E8"
                 },
-                children: [i.bride , " & " , i.groom]
+                children: [ i.groom , " & " , i.bride ]
             }),
             
     
@@ -19456,7 +19481,7 @@ function G2({t: f, lang: i}) {
                                 }), Z.jsx("span", {
                                     "code-path": "src/sections/EventDetailsSection.tsx:33:19",
                                     className: "font-body text-sm",
-                                    children: i === "en" ? Se.timeDisplayEN : Se.timeDisplay
+                                    children:  f.timeDisplayEN 
                                 })]
                             }), Z.jsxs("div", {
                                 "code-path": "src/sections/EventDetailsSection.tsx:35:17",
@@ -19608,6 +19633,7 @@ function Q2({t: f}) {
 }
 const Z2 = {
     en: { 
+        timeDisplayEN: "  Starting from 2:00 PM",
         venue: "Salle des fêtes Maachi",
         nameFont: "font-script",
         dateDisplay:"18 August 2026",
@@ -19715,6 +19741,7 @@ const Z2 = {
     },
     
     ar: { 
+     timeDisplayEN: "ابتداءً من الساعة 2:00 زوالًا",
     venue: "قاعة الحفلات معاشي",
      nameFont: "font-arabic",
     dateDisplay:"18 أوت 2026",
@@ -19731,7 +19758,7 @@ const Z2 = {
     fairepartIntroPostDaughter: "بدعوتكم لمشاركة فرحتها بزفاف ابنتها ",
     fairepartIntroPostSon: "بدعوتكم لمشاركة فرحتها بزفاف ابنها",
     fairepartBride: "إيناس مغربي",
-    fairepartConnector: "على",
+    fairepartConnector: "و",
     fairepartGroom: "كريم بابوري",
     fairepartPara2: "ويسعدها ويشرفها حضوركم لمشاركتها هذه المناسبة المباركة التي تجمع بينهما في المحبة والمودة والبركة.",
     fairepartPara3: "إن حضوركم سيزيد فرحتنا بهجة، وسيجعل هذا اليوم ذكرى خالدة نعتز بها دائمًا.",
@@ -19863,6 +19890,7 @@ const Z2 = {
     
     
     fr: { 
+         timeDisplayEN: "  À partir de 2:00 PM",
         venue: "Salle des fêtes Maachi",
         nameFont: "font-script",
         dateDisplay:"18 août 2026",
