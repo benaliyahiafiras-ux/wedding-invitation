@@ -19024,12 +19024,16 @@ function L2({envelopeOpened: f, t: i, onRegisterBgPlay: u}) {
                 children: i.gettingMarried
             }), Z.jsxs("h1", {
                 "code-path": "src/sections/HeroSection.tsx:103:9",
-                className: `${i.nameFont} text-5xl md:text-7xl drop-shadow-lg mb-2 leading-tight`,
+                className: `${i.nameFont} text-3xl md:text-5xl drop-shadow-lg mb-2 leading-tight whitespace-nowrap`,
                 style: {
                     color: "#F5F0E8"
                 },
-                children: [i.bride, " & ", i.groom]
-            }), Z.jsxs("div", {
+                children: [i.bride , " & " , i.groom]
+            }),
+            
+    
+            
+             Z.jsxs("div", {
                 "code-path": "src/sections/HeroSection.tsx:107:9",
                 className: "flex items-center justify-center gap-3 mb-2",
                 children: [Z.jsx("div", {
