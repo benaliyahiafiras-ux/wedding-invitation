@@ -19189,7 +19189,7 @@ function j2({t: f}) {
                     children: f.brideFull
                 }), Z.jsx("p", {
                     "code-path": "src/sections/LoveStorySection.tsx:78:11",
-                    className: "animate-item font-body text-xs uppercase tracking-[0.25em] text-charcoal/50 my-3",
+                    className: "animate-item  font-serif-display text-xs uppercase tracking-[0.25em] text-charcoal/50 my-3",
                     children: f.fairepartConnector
                 }), Z.jsx("p", {
                     "code-path": "src/sections/LoveStorySection.tsx:82:11",
@@ -19340,7 +19340,7 @@ function X2({t: f}) {
                         },
                         children: [Z.jsx("p", {
                             "code-path": "src/sections/CountdownSection.tsx:127:15",
-                            className: "animate-item font-script text-4xl md:text-5xl text-[#8B7045] drop-shadow-sm mb-2",
+                            className: "animate-item font-script text-4xl md:text-5xl text-[#8B7045] drop-shadow-sm mb-2 ",
                             children: f.countdownTitle
                         }), Z.jsxs("p", {
                             "code-path": "src/sections/CountdownSection.tsx:132:15",
@@ -19972,7 +19972,7 @@ const Z2 = {
 function k2() {
     m2();
     const [f,i] = Mt.useState(!1)
-      , [u,a] = Mt.useState("fr")
+      , [u,a] = Mt.useState("ar")
       , [r,o] = Mt.useState(!1)
       , h = Mt.useRef(null)
       , d = Mt.useRef(null);
