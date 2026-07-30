@@ -18901,7 +18901,7 @@ function B2({onOpenComplete: f, onStartMusic: i, onPlayBgVideo: u}) {
         fontSize: "18px",
         fontWeight: "600",
         cursor: "pointer",
-        boxShadow: "0 0 12px rgba(212,175,55,0.35)",
+        
          backdropFilter: "blur(2px)"
     },                   
         onClick: e => {
