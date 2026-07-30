@@ -19024,7 +19024,7 @@ function L2({envelopeOpened: f, t: i, onRegisterBgPlay: u}) {
                 children: i.gettingMarried
             }), Z.jsxs("h1", {
                 "code-path": "src/sections/HeroSection.tsx:103:9",
-                className: `${i.nameFont} text-5xl md:text-7xl drop-shadow-lg mb-2 leading-tight`,
+                className: `font-script text-5xl md:text-7xl drop-shadow-lg mb-2 leading-tight`,
                 style: {
                     color: "#F5F0E8"
                 },
@@ -19181,7 +19181,7 @@ function j2({t: f}) {
                     children: [f.fairepartIntroPre, " ", Se.concernedFamily, " ", f.fairepartIntroPostDaughter]
                 }), Z.jsx("p", {
                     "code-path": "src/sections/LoveStorySection.tsx:74:11",
-                    className: `animate-item ${f.nameFont} text-3xl md:text-4xl text-[#8B7045] mt-6 mb-1`,
+                    className: `animate-item font-script text-3xl md:text-4xl text-[#8B7045] mt-6 mb-1`,
                     children: f.brideFull
                 }), Z.jsx("p", {
                     "code-path": "src/sections/LoveStorySection.tsx:78:11",
@@ -19189,7 +19189,7 @@ function j2({t: f}) {
                     children: f.fairepartConnector
                 }), Z.jsx("p", {
                     "code-path": "src/sections/LoveStorySection.tsx:82:11",
-                    className: `animate-item ${f.nameFont} text-3xl md:text-4xl text-[#8B7045] mb-6`,
+                    className: `animate-item font-script text-3xl md:text-4xl text-[#8B7045] mb-6`,
                     children: f.groomFull
                 }), Z.jsx("div", {
                     "code-path": "src/sections/LoveStorySection.tsx:86:11",
