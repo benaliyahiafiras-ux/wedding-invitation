@@ -19046,7 +19046,7 @@ function L2({envelopeOpened: f, t: i, onRegisterBgPlay: u}) {
                 children: "بسم الله الرحمن الرحيم"
             }), Z.jsx("p", {
                 "code-path": "src/sections/HeroSection.tsx:99:9",
-                className: "font-body text-3xl uppercase tracking-[0.3em] mb-8",
+                className: " mb-8",
                 style: {
                    color: "#F5F0E8",
                   fontFamily: i.gettingMarriedFont,
@@ -19762,7 +19762,7 @@ const Z2 = {
     youAreInvited: "أنتم مدعوون",
     gettingMarried: "دعوة زفاف",
     gettingMarriedFont: "font-title",
-    gettingMarriedSize: "20px",
+    gettingMarriedSize: "48px",
     confirmAttendance: "تأكيد الحضور",
     ourJourney: "دعوة زفاف",
     ourLoveStory: "دعوة زفاف",
