@@ -18800,6 +18800,7 @@ function B2({onOpenComplete: f, onStartMusic: i, onPlayBgVideo: u}) {
       , r = Mt.useRef(null)
       , o = Mt.useRef(null)
       , [h,d] = Mt.useState(!1)
+      , [imageLoaded, setImageLoaded] = Mt.useState(!1)
       , m = () => {
         Ke.to(a.current, {
             opacity: 0,
@@ -18884,15 +18885,16 @@ function B2({onOpenComplete: f, onStartMusic: i, onPlayBgVideo: u}) {
                 "code-path": "src/components/EnvelopeOverlay.tsx:79:9",
                 src: Se.introImage,
                 alt: "",
-                className: "w-full h-full object-cover"
+                className: "w-full h-full object-cover" ,
+                onLoad: () => setImageLoaded(!0) ,
         }),
-             Z.jsx("button", {
+         imageLoaded && Z.jsx("button", {
             style: {
-        position: "fixed",
+        position: "absolute",
         bottom: "460px",
         left: "50%",
         transform: "translateX(-50%)",
-        zIndex: 9999,
+        zIndex: 20,
         background: "transparent",
         color: "#6D1F32",
         padding: "14px 32px",
