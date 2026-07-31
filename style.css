@@ -2943,6 +2943,9 @@ h1,h2,h3,h4,h5,h6 {
 .font-arabic {
     font-family: Scheherazade New,serif
 }
+.font-title {
+    font-family: "Amiri",serif ;
+}
 
 .\[--cell-size\: --spacing\(8\)\] {
     --cell-size: var(--spacing(8))

@@ -19048,7 +19048,11 @@ function L2({envelopeOpened: f, t: i, onRegisterBgPlay: u}) {
                 "code-path": "src/sections/HeroSection.tsx:99:9",
                 className: "font-body text-3xl uppercase tracking-[0.3em] mb-8",
                 style: {
-                    color: "#F5F0E8"
+                   color: "#F5F0E8",
+                  fontFamily: i.gettingMarriedFont,
+                  fontSize: i.gettingMarriedSize,
+                  lineHeight: "1.2",
+                  marginBottom: "32px"
                 },
                 children: i.gettingMarried
             }), Z.jsxs("h1", {
@@ -19646,7 +19650,9 @@ const Z2 = {
         bride: "Nadine",
         groom: "Abdulrahman",
         youAreInvited: "You are invited",
-        gettingMarried: "wedding ceremony",
+        gettingMarried: "wedding ceremony", 
+        gettingMarriedFont: "Amiri",
+        gettingMarriedSize: "22px",
         confirmAttendance: "CONFIRM ATTENDANCE",
         ourJourney: "Wedding Invitation",
         ourLoveStory: "Wedding Invitation",
@@ -19754,7 +19760,9 @@ const Z2 = {
     bride: "ندين",
     groom: "عبد الرحمن",   
     youAreInvited: "أنتم مدعوون",
-    gettingMarried: "دعــــــــــــــــوة زفـــــــــــــاف",
+    gettingMarried: "دعوة زفاف " ,
+    gettingMarriedFont: "font-title",
+    gettingMarriedSize: "48px",
     confirmAttendance: "تأكيد الحضور",
     ourJourney: "دعوة زفاف",
     ourLoveStory: "دعوة زفاف",
@@ -19904,6 +19912,8 @@ const Z2 = {
         groom: "Abdulrahman",
         youAreInvited: "Vous êtes invités",
         gettingMarried: "Cérémonie de Marriage",
+        gettingMarriedFont: "Cormorant Garamond",
+        gettingMarriedSize: "18px",
         confirmAttendance: "CONFIRMER LA PRÉSENCE",
         ourJourney: "Faire-part de Mariage",
         ourLoveStory: "Faire-part de Mariage",
