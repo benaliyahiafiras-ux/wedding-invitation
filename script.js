@@ -19761,7 +19761,7 @@ const Z2 = {
     groom: "عبد الرحمن",   
     youAreInvited: "أنتم مدعوون",
     gettingMarried: "دعوة زفاف",
-    gettingMarriedFont: "font-title",
+    gettingMarriedFont: "font-arabic",
     gettingMarriedSize: "48px",
     confirmAttendance: "تأكيد الحضور",
     ourJourney: "دعوة زفاف",
