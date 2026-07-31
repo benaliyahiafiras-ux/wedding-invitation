@@ -19028,28 +19028,30 @@ function L2({envelopeOpened: f, t: i, onRegisterBgPlay: u}) {
         }), Z.jsxs("div", {
             "code-path": "src/sections/HeroSection.tsx:91:7",
             ref: o,
-            className: "relative z-10 text-center px-6 mt-96",
+            className: "relative z-10 text-center px-6 ",
             style: {
-                opacity: 0
+                opacity: 0 ,
+                marginTop: "200px" 
             },
             children: [Z.jsx("p", {
                 "code-path": "src/sections/HeroSection.tsx:96:9",
-                className: "font-arabic text-2xl mb-2",
+                className: "font-arabic text-xl mb-2 ",
                 style: {
-                    color: "#F5F0E8"
+                    color: "#F5F0E8" ,
+                    
                 },
                 dir: "rtl",
                 children: "بسم الله الرحمن الرحيم"
             }), Z.jsx("p", {
                 "code-path": "src/sections/HeroSection.tsx:99:9",
-                className: "font-body text-xs uppercase tracking-[0.3em] mb-2",
+                className: "font-body text-3xl uppercase tracking-[0.3em] mb-8",
                 style: {
                     color: "#F5F0E8"
                 },
                 children: i.gettingMarried
             }), Z.jsxs("h1", {
                 "code-path": "src/sections/HeroSection.tsx:103:9",
-                className: `${i.nameFont} text-3xl md:text-5xl drop-shadow-lg mb-2 leading-tight whitespace-nowrap`,
+                className: `${i.nameFont} text-3xl md:text-5xl drop-shadow-lg mb-8 leading-tight whitespace-nowrap`,
                 style: {
                     color: "#F5F0E8"
                 },
@@ -19750,7 +19752,7 @@ const Z2 = {
     bride: "ندين",
     groom: "عبد الرحمن",   
     youAreInvited: "أنتم مدعوون",
-    gettingMarried: "دعوة زفاف",
+    gettingMarried: "دعــــــــــــــــوة زفـــــــــــــاف",
     confirmAttendance: "تأكيد الحضور",
     ourJourney: "دعوة زفاف",
     ourLoveStory: "دعوة زفاف",
