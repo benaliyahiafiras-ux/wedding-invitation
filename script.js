@@ -19033,7 +19033,7 @@ function L2({envelopeOpened: f, t: i, onRegisterBgPlay: u}) {
             className: "relative z-10 text-center px-6 ",
             style: {
                 opacity: 0 ,
-                marginTop: "200px" 
+                marginTop: "300px" 
             },
             children: [Z.jsx("p", {
                 "code-path": "src/sections/HeroSection.tsx:96:9",
