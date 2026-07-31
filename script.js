@@ -18775,7 +18775,7 @@ const Se = {
     familyName: "",
     concernedFamily: "",
     concernedSide: "bride",
-    weddingDate: "2026-08-18T18:30:00",
+    weddingDate: "2026-08-18T14:00:00",
     dateDisplay: "18 août 2026",
     timeDisplay: "14H00",
     timeDisplayEN: "  Starting from 2:00 PM",
@@ -19061,7 +19061,13 @@ function L2({envelopeOpened: f, t: i, onRegisterBgPlay: u}) {
                 style: {
                     color: "#F5F0E8"
                 },
-                children: [ i.groom , " & " , i.bride ]
+                children: [
+                    i.groom,
+                    "\u00A0\u00A0\u00A0",
+                    i.and,
+                    "\u00A0\u00A0\u00A0",
+                     i.bride
+                    ]
             }),
             
     
@@ -19214,7 +19220,12 @@ function j2({t: f}) {
                     }
                 }), Z.jsxs("p", {
                     "code-path": "src/sections/LoveStorySection.tsx:70:11",
-                    className: "animate-item font-serif-display text-lg md:text-xl text-charcoal/90 leading-relaxed italic",
+                    className:  `animate-item ${f.fairepartFont || "font-serif-display"} italic`,
+                     style: {
+                      fontSize: f.fairepartSize || "1.125rem",
+                      lineHeight: f.fairepartLineHeight || "1.8",
+                      color: f.fairepartColor || ""
+                     },
                     children: [f.fairepartIntroPre, " ", Se.concernedFamily, " ", f.fairepartIntroPostDaughter]
                 }), Z.jsx("p", {
                     "code-path": "src/sections/LoveStorySection.tsx:74:11",
@@ -19233,14 +19244,25 @@ function j2({t: f}) {
                     className: "animate-item w-8 h-px bg-gold/50 mx-auto mb-6"
                 }), Z.jsx("p", {
                     "code-path": "src/sections/LoveStorySection.tsx:88:11",
-                    className: "animate-item font-serif-display text-lg md:text-xl text-charcoal/90 leading-relaxed italic mb-6",
+                    className: `animate-item ${f.fairepartFont || "font-serif-display"} italic`,
+                     style: {
+                      fontSize: f.fairepartSize || "1.125rem",
+                      lineHeight: f.fairepartLineHeight || "1.8",
+                      color: f.fairepartColor || ""
+                     },
+
                     children: f.fairepartPara2
                 }), Z.jsx("div", {
                     "code-path": "src/sections/LoveStorySection.tsx:92:11",
                     className: "animate-item w-8 h-px bg-gold/50 mx-auto mb-6"
                 }), Z.jsx("p", {
                     "code-path": "src/sections/LoveStorySection.tsx:94:11",
-                    className: "animate-item font-serif-display text-lg md:text-xl text-charcoal/90 leading-relaxed italic",
+                    className: `animate-item ${f.fairepartFont || "font-serif-display"} italic`,
+                     style: {
+                      fontSize: f.fairepartSize || "1.125rem",
+                      lineHeight: f.fairepartLineHeight || "1.8",
+                      color: f.fairepartColor || ""
+                     },
                     children: f.fairepartPara3
                 })]
             })]
@@ -19623,7 +19645,7 @@ function Q2({t: f}) {
         children: [Z.jsxs("p", {
             "code-path": "src/sections/FooterSection.tsx:11:7",
             className: "font-script text-2xl text-[#8B7045] mb-1",
-            children: [f.bride, " & ", f.groom]
+            children: [f.bride, f.and , f.groom]
         }), Z.jsxs("p", {
             "code-path": "src/sections/FooterSection.tsx:14:7",
             className: "font-body text-[10px] uppercase tracking-[0.2em] text-charcoal/40",
@@ -19648,22 +19670,23 @@ const Z2 = {
         brideFull: "Nadine",
         groomFull: "Abdulrahman",
         bride: "Nadine",
+        and: " & " ,
         groom: "Abdulrahman",
         youAreInvited: "You are invited",
-        gettingMarried: "wedding ceremony", 
+        gettingMarried: "wedding invitation", 
         gettingMarriedFont: "Amiri",
         gettingMarriedSize: "27px",
         confirmAttendance: "CONFIRM ATTENDANCE",
         ourJourney: "Wedding Invitation",
         ourLoveStory: "Wedding Invitation",
-        fairepartIntroPre: "With great joy and gratitude to Allah, the",
-        fairepartIntroPostDaughter: " family Benali is delighted to announce the marriage of their daughter",
+        fairepartIntroPre: "The Benali family is pleased to invite you",
+        fairepartIntroPostDaughter: "to celebrate the wedding of their daughter",
         fairepartIntroPostSon: "family is delighted to announce the marriage of their son",
         fairepartBride: "Ines Megharbi",
         fairepartConnector: "to",
         fairepartGroom: "Karim Babouri",
-        fairepartPara2: "and would be truly honored by your presence as they celebrate this special occasion, a beautiful symbol of love, commitment, and blessings.",
-        fairepartPara3: "We would be delighted to share this precious and memorable day with you, and your presence will make this celebration all the more meaningful and cherished forever.",
+        fairepartPara2: "They would be delighted to have you join them in celebrating this blessed occasion, which brings the couple together in love, harmony, and blessings.",
+        fairepartPara3:  "Your presence will make this celebration even more joyful and will help create memories to cherish forever." ,
         fairepartPara1: "",
         fairepartPara4: "",
         timeline2020: "",
@@ -19753,27 +19776,32 @@ const Z2 = {
     ar: { 
      timeDisplayEN: "ابتداءً من الساعة 2:00 زوالًا",
     venue: "قاعة الحفلات معاشي",
-     nameFont: "font-arabic",
+     nameFont: "font-gb",
     dateDisplay:"18 أوت 2026",
     brideFull: "ندين",
     groomFull: "عبد الرحمن",
-    bride: "ندين",
+    bride: "نديــن",
+    and: " و " ,
     groom: "عبد الرحمن",   
     youAreInvited: "أنتم مدعوون",
-    gettingMarried: "دعــوة زفـــاف",
+    gettingMarried: "دعـــوة زفـــاف",
     gettingMarriedFont: "font-title",
     gettingMarriedSize: "48px",
     confirmAttendance: "تأكيد الحضور",
     ourJourney: "دعوة زفاف",
     ourLoveStory: "دعوة زفاف",
-    fairepartIntroPre: "بكل فرح وامتنان لله، تتشرف عائلة  بن علي ",
-    fairepartIntroPostDaughter: "بدعوتكم لمشاركة فرحتها بزفاف ابنتها ",
+    fairepartIntroPre: "تتشرف عائلة  بن علي",
+     fairepartFont: "font-amiri",
+    fairepartSize: "22px",
+    fairepartLineHeight: "2.2",
+    fairepartColor: "#666",
+    fairepartIntroPostDaughter: "بدعوتكم لحضور زفاف ابنتها ",
     fairepartIntroPostSon: "بدعوتكم لمشاركة فرحتها بزفاف ابنها",
     fairepartBride: "إيناس مغربي",
     fairepartConnector: "و",
     fairepartGroom: "كريم بابوري",
-    fairepartPara2: "ويسعدها ويشرفها حضوركم لمشاركتها هذه المناسبة المباركة التي تجمع بينهما في المحبة والمودة والبركة.",
-    fairepartPara3: "إن حضوركم سيزيد فرحتنا بهجة، وسيجعل هذا اليوم ذكرى خالدة نعتز بها دائمًا.",
+    fairepartPara2: "ويسعدها حضوركم لمشاركتها هذه المناسبة المباركة التي تجمع بينهما في المحبة والمودة والبركة.",
+    fairepartPara3: "إن حضوركم سيزيد الحفل بهجة، وسيجعل هذا اليوم ذكرى خالدة لا تنسى .",
     fairepartPara1: "",
     fairepartPara4: "",
 
@@ -19909,22 +19937,23 @@ const Z2 = {
         brideFull: "Nadine",
         groomFull: "Abdulrahman",
         bride: "Nadine",
+        and: " & " ,
         groom: "Abdulrahman",
         youAreInvited: "Vous êtes invités",
-        gettingMarried: "Cérémonie de Marriage",
+        gettingMarried: "Invitation de Marriage",
         gettingMarriedFont: "Cormorant Garamond",
         gettingMarriedSize: "24px",
         confirmAttendance: "CONFIRMER LA PRÉSENCE",
         ourJourney: "Faire-part de Mariage",
         ourLoveStory: "Faire-part de Mariage",
-        fairepartIntroPre: "Dans la joie et la gratitude envers Allah, la famille Benali ",
-        fairepartIntroPostDaughter: "a l'immense honneur de vous annoncer l'union de leur fille",
+        fairepartIntroPre: "La famille Benali a l'honneur de vous inviter",
+        fairepartIntroPostDaughter: "au mariage de leur fille",
         fairepartIntroPostSon: "a l'immense bonheur de vous annoncer l'union de leur fils",
         fairepartBride: "Inès Megharbi",
         fairepartConnector: "avec",
         fairepartGroom: "Karim Babouri",
-        fairepartPara2: "et serait profondément honorée de votre présence pour célébrer avec eux cette journée d'exception, symbole d'amour, d'engagement et de bénédictions.",
-        fairepartPara3: "Nous serions heureux de partager avec vous ce moment unique et précieux, et votre présence à nos côtés fera de cette célébration un souvenir inoubliable que nous chérirons pour toujours.",
+        fairepartPara2: "Elle sera très heureuse de votre présence pour partager avec elle cette heureuse occasion qui unit les deux époux dans l'amour, l'affection et la bénédiction.",
+        fairepartPara3:  "Votre présence apportera encore plus de joie à cette célébration et fera de cette journée un souvenir inoubliable." ,
         fairepartPara1: "",
         fairepartPara4: "",
         timeline2020: "",

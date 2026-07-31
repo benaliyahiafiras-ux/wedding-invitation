@@ -2940,12 +2940,24 @@ h1,h2,h3,h4,h5,h6 {
 .font-body {
     font-family: Montserrat,sans-serif
 }
-.font-arabic {
+.font-arabic2 {
     font-family: Scheherazade New,serif
 }
 .font-title {
     font-family: "Amiri",serif ;
 }
+.font-gb {
+    font-family: "Aref Ruqaa", serif;
+}
+
+
+
+
+
+
+
+
+
 
 .\[--cell-size\: --spacing\(8\)\] {
     --cell-size: var(--spacing(8))
